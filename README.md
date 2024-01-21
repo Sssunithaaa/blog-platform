@@ -38,8 +38,8 @@ The MERN stack blog platform can be easily deployed using Docker Compose. Ensure
 ### Running the Application
 
 1. Clone the repository:
-   git clone https://github.com/Sssunithaaa/blog-platform.git
-   cd blog-platform
+   - git clone https://github.com/Sssunithaaa/blog-platform.git
+   - cd blog-platform
 
 Run the following command to start the application:
 docker-compose up
