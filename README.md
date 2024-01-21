@@ -30,4 +30,3 @@ This project is a full-stack blog platform developed using the MERN (MongoDB, Ex
 - **Additional Tools:**
   - Axios for API requests
   - Bcrypt for password hashing
-  - ...
