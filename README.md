@@ -1,3 +1,5 @@
+# Blog platform
+
 This project is a full-stack blog platform developed using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It incorporates additional functionalities such as Tailwind CSS for styling and React-Redux for state management. The platform enables users to create, edit, and manage blog posts, fostering a dynamic and interactive blogging experience.
 
 ## Features
