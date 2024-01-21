@@ -41,8 +41,8 @@ The MERN stack blog platform can be easily deployed using Docker Compose. Ensure
    - git clone https://github.com/Sssunithaaa/blog-platform.git
    - cd blog-platform
 
- - Run the following command to start the application:
- - docker-compose up
- - This will build and start the Docker containers for MongoDB, the backend server, and the frontend.
+  Run the following command to start the application:
+  docker-compose up
+  This will build and start the Docker containers for MongoDB, the backend server, and the frontend.
 
- - Open your browser and visit localhost:3000 to access the blog platform.
+  Open your browser and visit localhost:3000 to access the blog platform.
