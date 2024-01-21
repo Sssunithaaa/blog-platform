@@ -1,0 +1,46 @@
+version: '3.8'
+services:
+  mongodb:
+    image: "mongo"
+    ports:
+      - '27017:27017'
+    volumes:
+      - data:/data/db
+    networks:
+      - mern-app
+
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - logs:/apps/logs
+      - ./backend:/app
+      - /app/node_modules
+    depends_on:
+      - mongodb
+    networks:
+      - mern-app
+  
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend/src:/app/src
+    mem_limit: 2g
+    stdin_open: true
+    tty: true
+    depends_on:
+      - backend
+    networks:
+      - mern-app
+
+
+networks:
+  mern-app:
+    driver: bridge
+
+volumes:
+  data:
+  logs:
